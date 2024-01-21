@@ -4,7 +4,7 @@ const axios = require('axios');
 const app = express();
 const port = 8080;
 
-app.get('/', async (req, res) =>{
+app.get('/api', async (req, res) =>{
     var search = req.query.search;
     if (!search) return res.json({ error: 'pinterest API' });
 	var headers = {
